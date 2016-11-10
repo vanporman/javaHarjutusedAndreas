@@ -15,7 +15,7 @@ public class HuvitavTabel {
 		
 		for (int i = 0; i < tabeliSuurus; i++) {
 			for (int j = 0; j < tabeliSuurus; j++) {
-				System.out.print(i + j + " ");
+				System.out.print(" " + i + j + " ");
 			}
 			System.out.println();
 		}
