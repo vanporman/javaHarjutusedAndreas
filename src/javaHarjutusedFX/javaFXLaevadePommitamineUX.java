@@ -1,3 +1,4 @@
+package javaHarjutusedFX;
 
 import javafx.application.Application;
 import javafx.scene.Node;
@@ -18,37 +19,36 @@ public class javaFXLaevadePommitamineUX extends Application {
 	Stage mainGameStage;
 	Image piraadiLaev = new Image("pirate.png");
 	ImagePattern laevaPildiMuster = new ImagePattern(piraadiLaev);
-	
+
 	@Override
 	public void start(Stage primaryStage) throws Exception {
-		
+
 		seadistaLava();
 		sisestaLaevad();
 		reageeriKlikile();
-		
+
 	}
 
 	private void reageeriKlikile() {
 		manguLaud.setOnMouseClicked(event -> {
-			//System.out.println("KLIKK");
+			// System.out.println("KLIKK");
 			Rectangle ruut = (Rectangle) event.getTarget();
 			String tyyp = ruut.getId();
-			if(tyyp.equals("meri")){
+			if (tyyp.equals("meri")) {
 				System.out.println("KLIKK MÖÖDA");
 				ruut.setFill(Color.DARKBLUE);
-			}else if (tyyp.equals("laev")){
+			} else if (tyyp.equals("laev")) {
 				System.out.println("KLIKK PIHTA");
 				ruut.setFill(laevaPildiMuster);
 				ruut.setId("põhjas");
 			}
-			
-			if(!laevasidOnAlles()){
+
+			if (!laevasidOnAlles()) {
 				gameOver();
 			}
-			
+
 		});
-		
-		
+
 	}
 
 	private void gameOver() {
@@ -60,12 +60,12 @@ public class javaFXLaevadePommitamineUX extends Application {
 		Stage goStage = new Stage();
 		goStage.setScene(scene);
 		goStage.show();
-		
+
 	}
 
 	private boolean laevasidOnAlles() {
-		for(Node ruut : manguLaud.getChildren()){
-			if(ruut.getId().equals("laev")){
+		for (Node ruut : manguLaud.getChildren()) {
+			if (ruut.getId().equals("laev")) {
 				return true;
 			}
 		}
@@ -73,32 +73,32 @@ public class javaFXLaevadePommitamineUX extends Application {
 	}
 
 	private void sisestaLaevad() {
-		for(int i=0; i < lauaPikkusLaevades; i++){
-			for(int j=0; j < lauaPikkusLaevades; j++){
+		for (int i = 0; i < lauaPikkusLaevades; i++) {
+			for (int j = 0; j < lauaPikkusLaevades; j++) {
 				// Siia tulen 9 * 9 korda MAATRIKS
 				Rectangle ruut = new Rectangle(laevaPikkusPx, laevaPikkusPx);
 				int randLaev = (int) (Math.random() * 1.3);
-				if (randLaev == 1){
+				if (randLaev == 1) {
 					ruut.setId("laev");
-				}else{
+				} else {
 					ruut.setId("meri");
 				}
 				ruut.setFill(Color.BLUE);
-				//ruut.setStroke(Color.GREENYELLOW);
+				// ruut.setStroke(Color.GREENYELLOW);
 				manguLaud.add(ruut, i, j);
 			}
 		}
-		
+
 	}
 
 	private void seadistaLava() {
 		manguLaud = new GridPane();
-		Scene scene = new Scene(manguLaud, (laevaPikkusPx*lauaPikkusLaevades), (laevaPikkusPx*lauaPikkusLaevades));
+		Scene scene = new Scene(manguLaud, (laevaPikkusPx * lauaPikkusLaevades), (laevaPikkusPx * lauaPikkusLaevades));
 		mainGameStage = new Stage();
 		scene.setFill(Color.DARKBLUE);
 		mainGameStage.setScene(scene);
 		mainGameStage.show();
-		
+
 	}
 
 	public static void main(String[] args) {

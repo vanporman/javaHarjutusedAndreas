@@ -1,3 +1,4 @@
+package javaHarjutusedFX;
 
 import javafx.application.Application;
 import javafx.scene.Scene;
@@ -10,13 +11,13 @@ import javafx.scene.shape.Rectangle;
 import javafx.stage.Stage;
 
 /**
- * 1. Joonista eesti lipp kasutades kolme Rectangle
- * 2. Joonista Jaapani lipp kasutades Rectangle ja Circle
+ * 1. Joonista eesti lipp kasutades kolme Rectangle 2. Joonista Jaapani lipp
+ * kasutades Rectangle ja Circle
  */
 public class Harjutus1_Lipud extends Application {
-	
+
 	@Override
-	public void start(Stage primaryStage) throws Exception{
+	public void start(Stage primaryStage) throws Exception {
 		Rectangle rec = new Rectangle(20, 20, 100, 60);
 		rec.setFill(Color.TRANSPARENT);
 		rec.setStroke(Color.BLACK);
@@ -37,13 +38,13 @@ public class Harjutus1_Lipud extends Application {
 		Pane pane = new Pane();
 		pane.getChildren().addAll(rec, rec1, rec2, rec3, rec4, ring);
 		Scene primaryScene = new Scene(pane, 500, 300);
-		//seeStseen.setFill(Color.ALICEBLUE);
-		
+		// seeStseen.setFill(Color.ALICEBLUE);
+
 		primaryStage.setScene(primaryScene);
 		primaryStage.show();
-		
+
 	}
-		
+
 	public static void main(String[] args) {
 		launch(args);
 	}
