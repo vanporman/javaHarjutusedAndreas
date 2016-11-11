@@ -1,1 +1,1 @@
-Minu Java harjutused.
+Java harjutused

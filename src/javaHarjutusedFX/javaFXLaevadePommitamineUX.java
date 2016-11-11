@@ -35,12 +35,12 @@ public class javaFXLaevadePommitamineUX extends Application {
 			Rectangle ruut = (Rectangle) event.getTarget();
 			String tyyp = ruut.getId();
 			if (tyyp.equals("meri")) {
-				System.out.println("KLIKK M√ñ√ñDA");
+				System.out.println("KLIKK M÷÷DA");
 				ruut.setFill(Color.DARKBLUE);
 			} else if (tyyp.equals("laev")) {
 				System.out.println("KLIKK PIHTA");
 				ruut.setFill(laevaPildiMuster);
-				ruut.setId("p√µhjas");
+				ruut.setId("pıhjas");
 			}
 
 			if (!laevasidOnAlles()) {

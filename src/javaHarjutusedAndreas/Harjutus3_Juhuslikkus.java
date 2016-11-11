@@ -5,28 +5,28 @@ import java.util.Scanner;
 /**
  * Juhuslikkus
  *
- * 1. Kirjutada m√§ng kull ja kiri.
- *    Programm k√ºsib kasutajalt: kas kull v√µi kiri? "Viskab" m√ºndi ja
- *    teatab, kas kasutaja arvas √µigesti v√µi mitte.
- *    Vihje: √§ra hakka j√§ndama Stringidega, k√ºsi kasutajalt number.
+ * 1. Kirjutada m‰ng kull ja kiri.
+ *    Programm k√ºsib kasutajalt: kas kull vıi kiri? "Viskab" m√ºndi ja
+ *    teatab, kas kasutaja arvas ıigesti vıi mitte.
+ *    Vihje: ‰ra hakka j‰ndama Stringidega, k√ºsi kasutajalt number.
  *
- * 2. Kirjutada liisu t√µmbamise programm.
- *    K√ºsida kasutajalt inimeste arv. V√§ljastada juhuslik number vahemikus 1
+ * 2. Kirjutada liisu tımbamise programm.
+ *    K√ºsida kasutajalt inimeste arv. V‰ljastada juhuslik number vahemikus 1
  *    kuni arv (kaasaarvatud).
- *    NB! Kontrollida, et t√∂√∂tab √µigesti: st. √∂eldes mitu korda j√§rjest
- *    arvuks 3, peab v√µimalike vastuste hulgas olema nii √ºhtesid, kahtesid kui kolmi.
+ *    NB! Kontrollida, et t√∂√∂tab ıigesti: st. √∂eldes mitu korda j‰rjest
+ *    arvuks 3, peab vıimalike vastuste hulgas olema nii √ºhtesid, kahtesid kui kolmi.
  *
- * 3. Kirjutada t√§ringum√§ng:
- *    Programm viskab kaks t√§ringut m√§ngijale ja kaks t√§ringut endale
- *    (arvutile), arvutab m√µlema m√§ngija silmade summad ja teatab,
+ * 3. Kirjutada t‰ringum‰ng:
+ *    Programm viskab kaks t‰ringut m‰ngijale ja kaks t‰ringut endale
+ *    (arvutile), arvutab mılema m‰ngija silmade summad ja teatab,
  *    kellel oli rohkem.
  */
 public class Harjutus3_Juhuslikkus {
     public static void main(String[] args) {
     	
-    	//Kull v√µi kiri
+    	//Kull vıi kiri
     	/*
-    	System.out.println("Kull v√µi kiri?");
+    	System.out.println("Kull vıi kiri?");
     	
     	Scanner valikuSisestus = new Scanner(System.in);
     	String minuValik = valikuSisestus.next();
@@ -51,7 +51,7 @@ public class Harjutus3_Juhuslikkus {
     	if (mynt == 0){
     		System.out.println("Kull!");
     		if(minuValik.equals("Kull")){
-    			System.out.println("T√§istabamus!");
+    			System.out.println("T‰istabamus!");
     		}
     		else{
     			System.out.println("Better luck nex time");
@@ -60,14 +60,14 @@ public class Harjutus3_Juhuslikkus {
     	else if (mynt == 1){
     		System.out.println("Kiri!");
     		if(minuValik2 == 1){
-    			System.out.println("T√§istabamus!");
+    			System.out.println("T‰istabamus!");
     		}
     		else{
     			System.out.println("Better luck nex time");
     		}
     	}*/
     	
-    	//Liisu t√µmbamine
+    	//Liisu tımbamine
     	/*
     	System.out.println("Kui palju on inimesi?");
     	
@@ -79,14 +79,14 @@ public class Harjutus3_Juhuslikkus {
     	System.out.println(liisk);
     	*/
     	/*
-    	//T√§ringum√§ng
+    	//T‰ringum‰ng
     	int mangijaSumma = 0;
     	int arvutiSumma = 0;;
     	
     	int mt = 2;
     	while (mt < 3){
     		mangijaSumma = ((int) (1 + Math.random() * 6)) + ((int) (1 + Math.random() * 6));
-    		System.out.println("m√§ngija: "+mangijaSumma);
+    		System.out.println("m‰ngija: "+mangijaSumma);
     		mt++;
     	}
     	
@@ -97,7 +97,7 @@ public class Harjutus3_Juhuslikkus {
     		at++;
     	}
     	if (mangijaSumma > arvutiSumma){
-    		System.out.println("M√§ngija v√µitis, summa oli: " + mangijaSumma);
+    		System.out.println("M‰ngija vıitis, summa oli: " + mangijaSumma);
     	}
     	else if (mangijaSumma < arvutiSumma){
     		System.out.println("Arvuti viskas, summa oli: " + arvutiSumma);
