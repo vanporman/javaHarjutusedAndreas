@@ -27,7 +27,7 @@ public class Meetodid {
 			Scanner sc = new Scanner(System.in);
 			int sisestus = sc.nextInt();
 			if (sisestus < min || sisestus > max){
-				System.out.println("See arv ei ole vahemikus");
+				System.out.println("See arv ei sobi");
 			} else {
 				return sisestus;							
 			}
@@ -50,6 +50,18 @@ public class Meetodid {
 	public static int suvalineArv(int min, int max){
 		int vahemik = max - min + 1;
 		return min + (int) (Math.random() * vahemik);
+	}
+	
+	public static int sisestaNumber(int i){
+		Scanner sc = new Scanner(System.in);
+		int yksNumber = sc.nextInt();
+		return yksNumber;
+	}
+	
+	public static String sisestaTekst(String i){
+		Scanner sc = new Scanner(System.in);
+		String yksText = sc.nextLine();
+		return yksText;
 	}
 	
 }

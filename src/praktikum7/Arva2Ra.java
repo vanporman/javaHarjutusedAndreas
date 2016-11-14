@@ -9,14 +9,14 @@ public class Arva2Ra {
 		int arvutiArv = Meetodid.suvalineArv(1, 100);
 		
 		while (true) {
-			int kasutajaArv = Meetodid.kasutajaSisestus("Palun sisesta arv ¸hest sajani", 1, 100);
+			int kasutajaArv = Meetodid.kasutajaSisestus("Palun sisesta arv √ºhest sajani", 1, 100);
 			if (kasutajaArv == arvutiArv) {
-				System.out.println("Arvasid ‰ra!");
+				System.out.println("Arvasid √ºra!");
 				break;
 			} else if (kasutajaArv > arvutiArv) {
-				System.out.println("Arvuti mıeldud arv on v‰iksem");
+				System.out.println("Arvuti m√ºeldud arv on v√ºiksem");
 			} else {
-				System.out.println("Arvuti mıeldud arv on suurem");
+				System.out.println("Arvuti m√ºeldud arv on suurem");
 			} 
 		}
 	}
