@@ -17,7 +17,7 @@ public class javaFXLaevadePommitamineUX extends Application {
 	int lauaPikkusLaevades = 9;
 	int laevaPikkusPx = 50;
 	Stage mainGameStage;
-	Image piraadiLaev = new Image("pirate.png");
+	Image piraadiLaev = new Image("file:///C:/Users/andreas/workspace/javaHarjutusedAndreas/img/pirate.png");
 	ImagePattern laevaPildiMuster = new ImagePattern(piraadiLaev);
 
 	@Override
