@@ -17,7 +17,7 @@ public class javaFXLaevadePommitamineUX extends Application {
 	int lauaPikkusLaevades = 9;
 	int laevaPikkusPx = 50;
 	Stage mainGameStage;
-	Image piraadiLaev = new Image("file:///C:/Users/andreas/workspace/javaHarjutusedAndreas/img/pirate.png");
+	Image piraadiLaev = new Image("/img/pirate.png");
 	ImagePattern laevaPildiMuster = new ImagePattern(piraadiLaev);
 
 	@Override
@@ -35,12 +35,12 @@ public class javaFXLaevadePommitamineUX extends Application {
 			Rectangle ruut = (Rectangle) event.getTarget();
 			String tyyp = ruut.getId();
 			if (tyyp.equals("meri")) {
-				System.out.println("KLIKK MÖÖDA");
+				System.out.println("KLIKK Mï¿½ï¿½DA");
 				ruut.setFill(Color.DARKBLUE);
 			} else if (tyyp.equals("laev")) {
 				System.out.println("KLIKK PIHTA");
 				ruut.setFill(laevaPildiMuster);
-				ruut.setId("põhjas");
+				ruut.setId("pï¿½hjas");
 			}
 
 			if (!laevasidOnAlles()) {
