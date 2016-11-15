@@ -39,7 +39,7 @@ public class Harjutus4_massiivid {
 		Arrays.sort(numbrit10);
 		System.out.println(Arrays.toString(numbrit10));*/
 		
-		/*
+		
 		String[] sone10 = new String[10];
 		
 		int counter = 11;
@@ -54,25 +54,25 @@ public class Harjutus4_massiivid {
 			sone10[i] = userInput;
 		}
 		Arrays.sort(sone10);
-		System.out.println(Arrays.toString(sone10));*/
+		System.out.println(Arrays.toString(sone10));
 		
-		ArrayList<Integer> suvalineArvNumbreid = new ArrayList();
-		Scanner sc = new Scanner(System.in);
+//		ArrayList<Integer> suvalineArvNumbreid = new ArrayList();
+//		Scanner sc = new Scanner(System.in);
+//		
+//		while(true){ //lõpamtuse tsükkel!!!!! <- seda otsissin
+//			System.out.println("Sisesta number:");
+//			int userInput = sc.nextInt();
+//			suvalineArvNumbreid.add(userInput);
+//			
+//			if(userInput == 0){
+//				System.out.println("0 will no do!");
+//				break;
+//			}
+//		}
 		
-		while(true){ //lõpamtuse tsükkel!!!!! <- seda otsissin
-			System.out.println("Sisesta number:");
-			int userInput = sc.nextInt();
-			suvalineArvNumbreid.add(userInput);
-			
-			if(userInput == 0){
-				System.out.println("0 will no do!");
-				break;
-			}
-		}
-		
-		System.out.println("here is what you entered:");
-		Collections.sort(suvalineArvNumbreid);
-		suvalineArvNumbreid.remove(0);
-		System.out.println(suvalineArvNumbreid);
+//		System.out.println("here is what you entered:");
+//		Collections.sort(suvalineArvNumbreid);
+//		suvalineArvNumbreid.remove(0);
+//		System.out.println(suvalineArvNumbreid);
 	}
 }
