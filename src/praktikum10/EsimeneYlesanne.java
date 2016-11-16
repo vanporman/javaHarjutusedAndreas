@@ -2,6 +2,10 @@ package praktikum10;
 
 import java.util.ArrayList;
 
+/**
+ * 1. V2ljasta massiivi suurim number
+ * 2. V2ljasta massiivide maatriksi suurim number
+ */
 public class EsimeneYlesanne {
 
 	public static void main(String[] args) {
@@ -43,6 +47,7 @@ public class EsimeneYlesanne {
 		
 	}
 
+	//Massiivi suurim number
 	private static int suurimNumber(int[] massiiv) {
 		int suurim = Integer.MIN_VALUE;
 		for (int i = 0; i < massiiv.length; i++) {

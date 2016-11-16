@@ -2,6 +2,10 @@ package praktikum7;
 
 import praktikum6.Meetodid;
 
+/**
+ * Programm, mis kysib kasutaja käest numbrit vahemikus 1 - 100.
+ * Kasutaja peab arvama 2ra arvuti poolt genereeritud numbrit
+ */
 public class Arva2Ra {
 
 	public static void main(String[] args) {
@@ -14,9 +18,9 @@ public class Arva2Ra {
 				System.out.println("Arvasid üra!");
 				break;
 			} else if (kasutajaArv > arvutiArv) {
-				System.out.println("Arvuti müeldud arv on vüiksem");
+				System.out.println("Arvuti m6eldud arv on vüiksem");
 			} else {
-				System.out.println("Arvuti müeldud arv on suurem");
+				System.out.println("Arvuti m6eldud arv on suurem");
 			} 
 		}
 	}
