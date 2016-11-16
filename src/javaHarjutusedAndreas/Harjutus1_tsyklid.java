@@ -52,8 +52,10 @@ public class Harjutus1_tsyklid {
 		
 		int count5 = 0;
 		while (count5 < 10){
+			String finalTabel = Arrays.toString(tabel[count5]);
 			//System.out.println(Arrays.toString(tabel[count5]));
-			System.out.printf("%s\n", Arrays.toString(tabel[count5]));
+			System.out.printf("%s\n", finalTabel);
+			//System.out.println(Arrays.deepToString(tabel));
 			count5++;
 		}
 	}

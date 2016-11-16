@@ -28,7 +28,7 @@ public class EsimeneYlesanne {
 		};
 		
 		//ArryList kuhu lisatakse iga rea suurim number
-		ArrayList suurimad = new ArrayList();
+		ArrayList<Integer> suurimad = new ArrayList();
 		for (int i = 0; i < neo.length; i++) {
 			suurimad.add(suurimNumber(neo[i]));
 		}
