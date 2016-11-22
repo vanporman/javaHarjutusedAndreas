@@ -5,6 +5,10 @@ import java.util.Collections;
 
 import praktikum6.Meetodid;
 
+/**
+ * Programm, mis kysib kasutajalt nimed ja lisab need massiivi ja v2ljastab tulemuse ekraanile.
+ * Programm l6petab tegevuse kui nime asemel sisestatakse tyhi v22rtus
+ */
 public class Nimed {
 
 	public static void main(String[] args) {

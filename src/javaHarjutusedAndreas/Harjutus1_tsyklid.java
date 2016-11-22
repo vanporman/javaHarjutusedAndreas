@@ -21,21 +21,21 @@ import java.util.Arrays;
 public class Harjutus1_tsyklid {
 	
 	public static void main(String []args){
-		int count = 10;
-		while (count > 0){
-			System.out.println(count);
-			count--;
-		}
-		
-		System.out.println("---");
-		
-		int count2 = 1;
-		while (count2 < 10){
-			System.out.println(count2);
-			count2 = count2 + 2;
-		}
-		
-		System.out.println("---");
+//		int count = 10;
+//		while (count > 0){
+//			System.out.println(count);
+//			count--;
+//		}
+//		
+//		System.out.println("---");
+//		
+//		int count2 = 1;
+//		while (count2 < 10){
+//			System.out.println(count2);
+//			count2 = count2 + 2;
+//		}
+//		
+//		System.out.println("---");
 		
 		int [][] tabel = new int [10][10];
 		int count3 = 0;
@@ -52,7 +52,10 @@ public class Harjutus1_tsyklid {
 		
 		int count5 = 0;
 		while (count5 < 10){
-			System.out.println(Arrays.toString(tabel[count5]));
+			String finalTabel = Arrays.toString(tabel[count5]);
+			//System.out.println(Arrays.toString(tabel[count5]));
+			System.out.printf("%s\n", finalTabel);
+			//System.out.println(Arrays.deepToString(tabel));
 			count5++;
 		}
 	}
